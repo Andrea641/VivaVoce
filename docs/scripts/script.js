@@ -14,11 +14,11 @@ function createWhiteNoise(count){
         const y = Math.floor((Math.random() * 80) + 1);
         const color = "white";
         let g = createSVGElement('g')
-        const wisp = createSVGElement("ellipse");
         gsap.set(g, {
             attr: { transform: "translate("+x+" "+y+")", class:"bkgWisp" }
         });
         
+        let wisp = createSVGElement("ellipse");
         gsap.set(wisp, {
             attr: { rx:"10", ry:"3", cx:"120", cy:"80", fill: color }
         });
