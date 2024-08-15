@@ -42,6 +42,7 @@ function overlay(){
 }
 
 
+document.getElementById("BKG").addEventListener("click", createWhiteNoise(Math.floor((Math.random() * 100) + 1)), false);
 
 
 function getRandomCoordinate(){
