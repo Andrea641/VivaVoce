@@ -10,7 +10,10 @@ function createWhiteNoise({count}){
     for (let i = 0; i < count; i++) {
         const {x, y} = getRandomCoordinate();
         const color = "black";
-        const star = createWhisper({color, x, y});
+        const wisp = createSVGElement("ellipse");
+        gsap.set(wisp, {
+            attr: { x: x, y: y, width: 10, height: 3, fill: color, class:"bkgWisp" }
+        });
     }
 }
 
@@ -19,7 +22,7 @@ function createWhisper({color, x, y}){
     let stroke = createSVGElement("ellipse");
 
     gsap.set(stroke, {
-        attr: { x: x, y: y, width: 100, height: 100, fill: color }
+        attr: { x: x, y: y, width: 10, height: 3, fill: color }
     });
     newWisp.appendChild(stroke);
     chatterSVG.appendChild(newWisp);
@@ -42,5 +45,7 @@ function overlay(){
 
 
 function getRandomCoordinate(){
-
+    const u = Math.floor((Math.random() * 100) + 1);
+    const v = Math.floor((Math.random() * 100) + 1);
+    return {u, v};
 }
