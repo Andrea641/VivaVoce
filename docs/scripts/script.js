@@ -14,6 +14,7 @@ function createWhiteNoise(count){
         gsap.set(wisp, {
             attr: { x: x, y: y, width: 10, height: 3, fill: color, class:"bkgWisp" }
         });
+        chatterSVG.appendChild(wisp);
     }
 }
 
