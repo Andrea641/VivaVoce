@@ -10,7 +10,8 @@ function createSVGElement(type){    return document.createElementNS(svgns, type)
 
 function createWhiteNoise(count){
     for (let i = 0; i < count; i++) {
-        const {x, y} = getRandomCoordinate();
+        const x = Math.floor((Math.random() * 100) + 1);
+        const y = Math.floor((Math.random() * 100) + 1);
         const color = "black";
         const wisp = createSVGElement("ellipse");
         gsap.set(wisp, {
