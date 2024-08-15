@@ -10,14 +10,16 @@ function createSVGElement(type){    return document.createElementNS(svgns, type)
 
 function createWhiteNoise(count){
     for (let i = 0; i < count; i++) {
-        const x = Math.floor((Math.random() * 100) + 1);
-        const y = Math.floor((Math.random() * 100) + 1);
+        const x = Math.floor((Math.random() * 80) + 1);
+        const y = Math.floor((Math.random() * 80) + 1);
         const color = "black";
+        let g = createSVGElement('g')
         const wisp = createSVGElement("ellipse");
         gsap.set(wisp, {
             attr: { x: x, y: y, width: 10, height: 3, fill: color, class:"bkgWisp" }
         });
-        chatterSVG.appendChild(wisp);
+        g.appendChild(wisp);
+        chatterSVG.appendChild(g);
     }
 }
 
