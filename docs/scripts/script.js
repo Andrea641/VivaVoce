@@ -20,7 +20,7 @@ function createWhiteNoise(count){
         
         let wisp = createSVGElement("ellipse");
         gsap.set(wisp, {
-            attr: { rx:"10", ry:"3", cx:x, cy:y, fill: color }
+            attr: { rx:"10px", ry:"3px", cx:x, cy:y, fill: color }
         });
         g.appendChild(wisp);
         chatterSVG.appendChild(g);
