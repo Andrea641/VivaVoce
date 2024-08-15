@@ -12,11 +12,11 @@ function createWhiteNoise(count){
     for (let i = 0; i < count; i++) {
         const x = Math.floor((Math.random() * 80) + 1);
         const y = Math.floor((Math.random() * 80) + 1);
-        const color = "black";
+        const color = "white";
         let g = createSVGElement('g')
         const wisp = createSVGElement("ellipse");
-        gsap.set(wisp, {
-            attr: { x: x, y: y, width: 10, height: 3, fill: color, class:"bkgWisp" }
+        gsap.set(g, {
+            attr: { transform: "translate("+x+" "+y+")", width: 10, height: 3, fill: color, class:"bkgWisp" }
         });
         g.appendChild(wisp);
         chatterSVG.appendChild(g);
@@ -28,7 +28,10 @@ function createWhisper({color, x, y}){
     let stroke = createSVGElement("ellipse");
 
     gsap.set(stroke, {
-        attr: { x: x, y: y, width: 10, height: 3, fill: color }
+        attr: { width: 10, height: 3, fill: color }
+    });
+    gsap.set(g, {
+        attr: { transform: "translate("+x+" "+y+")" }
     });
     newWisp.appendChild(stroke);
     chatterSVG.appendChild(newWisp);
