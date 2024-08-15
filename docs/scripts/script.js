@@ -35,7 +35,7 @@ function createWhisper({color, x, y}){
         attr: { rx:"10", ry:"3", cx:"120", cy:"80", fill: color }
     });
     gsap.set(g, {
-        attr: { transform: "translate("+x+" "+y+"), scale(0.94117647)" }
+        attr: { transform: "translate("+x+" "+y+")" }
     });
     newWisp.appendChild(stroke);
     chatterSVG.appendChild(newWisp);
