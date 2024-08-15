@@ -6,7 +6,7 @@ let newPath = createSVGElement("path");
 const chatterSVG = document.getElementById("chatter");
 function createSVGElement(type){    return document.createElementNS(svgns, type); }
 
-function createWhiteNoise({count}){
+function createWhiteNoise(count){
     for (let i = 0; i < count; i++) {
         const {x, y} = getRandomCoordinate();
         const color = "black";
