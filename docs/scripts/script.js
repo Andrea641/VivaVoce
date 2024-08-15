@@ -4,6 +4,8 @@ let newCirc = createSVGElement("circle");
 let newRect = createSVGElement("rect");
 let newPath = createSVGElement("path");
 const chatterSVG = document.getElementById("chatter");
+
+
 function createSVGElement(type){    return document.createElementNS(svgns, type); }
 
 function createWhiteNoise(count){
