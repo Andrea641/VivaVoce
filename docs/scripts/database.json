@@ -1,0 +1,77 @@
+{
+    "wisps": [
+        {
+            "subjectID": 0,
+            "subject": "Name",
+            "type": "Media Type",
+            "descriptors": [{
+                "An": {
+                    "descriptorID": 0,
+                    "name": "category or adjective"            
+                }, 
+                "Array":{
+                    "descriptorID": 1,
+                    "name": "category or adjective"            
+                }, 
+                "of":{
+                    "descriptorID": 2,
+                    "name": "category or adjective"            
+                }, 
+                "descriptors":{
+                    "descriptorID": 3,
+                    "name": "category or adjective"            
+                }, 
+                "from":{
+                    "descriptorID": 4,
+                    "name": "category or adjective"            
+                }, 
+                "pre-determined":{
+                    "descriptorID": 5,
+                    "name": "category or adjective"            
+                }, 
+                "list":{
+                    "descriptorID": 6,
+                    "name": "category or adjective"            
+                }
+            }],
+            "whispers": [{
+                "An":{
+                    "whisperID": 0,
+                    "name": "adjective"            
+                }, 
+                "Array":{
+                    "whisperID": 1,
+                    "name": "adjective"            
+                }, 
+                "of":{
+                    "whisperID": 2,
+                    "name": "adjective"            
+                }, 
+                "descriptors":{
+                    "whisperID": 3,
+                    "name": "adjective"            
+                }, 
+                "from":{
+                    "whisperID": 4,
+                    "name": "adjective"            
+                }, 
+                "pre-determined":{
+                    "whisperID": 5,
+                    "name": "adjective"            
+                }, 
+                "and":{
+                    "whisperID": 6,
+                    "name": "adjective"            
+                }, 
+                "user-made":{
+                    "whisperID": 7,
+                    "name": "adjective"            
+                }, 
+                "lists":{
+                    "whisperID": 8,
+                    "name": "adjective"            
+                }
+            }]
+        }
+    ]
+}
